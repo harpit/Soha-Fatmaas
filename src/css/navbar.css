@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Custom styles */
+.navbar {
+  background-color: black; 
+}
+
+.navbar-toggler {
+  border-color: white; 
+}
+
+.nav-link {
+  position: relative; 
+  color: #9d8b54;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav-link::after {
+  content: ""; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  width: 0; 
+  height: 2px; 
+  background-color: #735a1f; 
+  transition: width 0.3s ease; 
+}
+
+.nav-link:hover::after {
+  width: 100%; 
+}
+
+.nav-link:hover {
+  color: #735a1f;
+  font-weight: bolder;
+}
+
+.nav-link:active,
+.nav-link:visited {
+  color: #9d8b54;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Remove underline effect specifically for category dropdown */
+.nav-item.dropdown .nav-link::after {
+  display: none; /* Remove underline effect */
+}
+
+.nav-item.dropdown .nav-link {
+  color: #9d8b54;
+}
+
+.nav-item.dropdown .nav-link:hover {
+  color: #735a1f;
+}
+
+.cart {
+  color: #9d8b54; 
+}
+
+.offcanvas-header {
+  background-color: black; 
+  border-bottom: 1px solid #9d8b54; 
+}
+
+.offcanvas-title {
+  color: #9d8b54;
+}
+
+.offcanvas-body {
+  background-color: black;
+}
+
+.navbar-toggler-icon {
+  filter: invert(100%);
+  color: #735a1f; 
+  background-color: #d6e0f5;
+  border-radius: 20%;
+}
+
+.btn-close {
+  filter: invert(100%);
+  color: #735a1f; 
+  background-color: #d6e0f5;
+  border-radius: 20%;
+}
+
+.dropdown-toggle {
+  color: #9d8b54;
+  font-weight: 600;
+  text-decoration: none; /* Ensure no underline */
+}
+
+.dropdown-toggle:hover {
+  color: #735a1f;
+}
+
+.dropdown-menu {
+  background-color: black;
+  border: 1px solid #9d8b54;
+  border-radius: 10px;
+}
+
+.dropdown-item {
+  color: #9d8b54;
+  padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+  background-color: #735a1f;
+  color: black;
+  border-radius: 5px;
+}
+
+.cart, .dropdown, .search-input {
+  margin-left: 1px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}

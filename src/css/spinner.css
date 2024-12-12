@@ -1,0 +1,61 @@
+/* spinner.css */
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: #fff; /* Text color */
+  }
+  
+  .loader h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+  
+  .loader p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+  
+  .loader {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .loader-dot {
+    width: 20px;
+    height: 20px;
+    background-color: #735a1f;
+    border-radius: 50%;
+    animation: bounce 1.5s infinite ease-in-out;
+  }
+  
+  .loader-dot:nth-child(2) {
+    background-color: #9d8b54;
+    animation-delay: -0.3s;
+  }
+  
+  .loader-dot:nth-child(3) {
+    background-color: #735a1f;
+    animation-delay: -0.6s;
+  }
+  
+  .loader-dot:nth-child(4) {
+    background-color: #9d8b54;
+    animation-delay: -0.9s;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  

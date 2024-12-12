@@ -1,0 +1,43 @@
+.search-icon {
+    color: #9d8b54;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.search-form {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    transition: all 0.3s ease;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.search-form.show {
+    display: block;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: #9d8b54;
+    background-color: black;
+}
+
+.search-button {
+    border: none;
+    background-color: #735a1f;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.search-button:hover {
+    background-color: #9d8b54;
+}
